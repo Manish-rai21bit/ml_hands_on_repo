@@ -1,0 +1,48 @@
+---
+title: "Simulating Distribution"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+require(ggplot2)
+```
+
+# Simulating Poisson distribution for Abundance Estimation of Animals
+
+```{r pressure, echo=FALSE}
+i = 0.5
+vecpoisson=rpois(1000,i)
+mean(vecpoisson)
+x1 <- vecpoisson
+ggplot(data.frame(x1), aes(x=x1)) + geom_histogram(aes(y=..density..))
+```
+
+```{r}
+i = 2
+vecpoisson=rpois(1000,i)
+mean(vecpoisson)
+x1 <- vecpoisson
+ggplot(data.frame(x1), aes(x=x1)) + geom_histogram(aes(y=..density..))
+```
+
+```{r}
+i = 5
+vecpoisson=rpois(1000,i)
+mean(vecpoisson)
+x1 <- vecpoisson
+ggplot(data.frame(x1), aes(x=x1)) + geom_histogram(aes(y=..density..))
+```
+
+```{r}
+i = 10
+vecpoisson=rpois(1000,i)
+mean(vecpoisson)
+x1 <- vecpoisson
+ggplot(data.frame(x1), aes(x=x1)) + geom_histogram(aes(y=..density..))
+```
+
